@@ -1,18 +1,19 @@
 .banner{
   background-color: black;
+  height: 80px;
   display: flex;
   justify-content: center;
 }
 
-#exitad{
+#exitcontainer--exitad{
   position: absolute;
   top: 10px;
-  /* right: 190px; */
+  right: 480px;
   z-index: 1;
 }
 
-#headerContents{
-  background-color: powderblue;
+.headerContents{
+  /* background-color: powderblue; */
   width: 100%;
   height: 112px;
   border-bottom: 1px;
@@ -21,9 +22,49 @@
   justify-content: center;
 }
 
-#headerContents--mymenu{
-  background-color: antiquewhite;
+.headerContents--top{
+  /* background-color: antiquewhite; */
+  display: flex;
   width: 980px;
   height: 57px;
   padding: 30px 6px 25px 5px;
+  justify-content: space-between;
 }
+
+.logoslogan{
+  display: flex;
+}
+
+.logo{
+  display: block;
+  width: 117px;
+  height: 53px;
+}
+
+.slogan{
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+  letter-spacing: 0.313em;
+  line-height: 85px;
+}
+
+.mymenu{
+  display: flex;
+}
+
+.mymenu--img{
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+.mymenu--text{
+  bottom: 0;
+  left: 50%;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.462em;
+  white-space: nowrap;
+}
+
