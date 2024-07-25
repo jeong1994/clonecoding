@@ -1,4 +1,10 @@
-*{
+/* main{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 1000px;
+} */
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -11,17 +17,12 @@ a{
   text-decoration: none;
 }
 
+
 body {
   overflow-x: hidden;
 }
 
-/* main{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  height: 1000px;
-} */
-
-.banner--ad{
+.banner--ad {
   background-color: black;
   height: 80px;
   position: relative;
@@ -29,201 +30,175 @@ body {
   justify-content: center;
 }
 
-.close{
+.close {
   position: absolute;
   top: 10px;
   right: 10px;
   z-index: 1;
 }
 
-#exitcontainer--exitad{
-  /* position: absolute; */
+#exitcontainer--exitad {
   top: 11px;
   right: 471px;
-  /* z-index: 1; */
 }
 
-.headerContents{
-  /* background-color: powderblue; */
+.headerContents {
   width: 100%;
   height: 112px;
   border-bottom: 1px solid lightgray;
-  /* margin-bottom: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.headerContents--top{
-  /* background-color: lightslategray; */
+.headerContents--top {
   display: flex;
-  position: relative;
-  width: 980px;
-  /* width: 100%; */
-  height: 57px;
+  width: 100%;
+  max-width: 980px;
+  height: 100%;
   padding: 30px 6px 25px 5px;
   justify-content: space-between;
   align-items: center;
 }
 
-.logoslogan{
+.logoslogan {
   display: flex;
   align-items: center;
 }
 
-.logo{
+.logo {
   display: block;
   width: 117px;
   height: 53px;
 }
 
-.slogan{
+.slogan {
   font-weight: 300;
   font-size: 16px;
   color: #222;
   letter-spacing: 0.313em;
-  line-height: 83px;
+  margin-left: 10px;
 }
 
-.mymenu{
+.mymenu {
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
-.mymenu--list{
+.mymenu--list {
   margin-left: 20px;
   position: relative;
 }
 
-.mymenu--img{
+.mymenu--img {
   display: block;
   width: 36px;
   height: 36px;
 }
 
-.mymenu--text{
-  bottom: 0;
-  left: 50%;
-  font-size: 11px;
-  font-weight: bold;
+.mymenu--text {
+  font-size: 13px;
   color: #666;
-  line-height: 1.462em;
+  text-align: center;
 }
 
-.mymenu > .mymenu--list{
-  position: absolute;
-}
-
-#list--hyundae{
-  top: 119px;
-  right: 782px;
-}
-
-.mymenu-container{
-  width: 47.84px;
+.mymenu-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-#list--login{
-  top: 112px;
-  right: 696px;
-}
-#list--join{
-  top: 112px;
-  right: 616px;
-}
-#list--mycgv{
-  top: 112px;
-  right: 536px;
-}
-#list--help{
-  top: 112px;
-  right: 456px;
-}
-
-.nav-container{
-  /* background-color: #666; */
-  /* width: 100%; */
-  /* height: 40px; */
-  /* padding: 5px 0; */
+.nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  border-top: 1px solid lightgray;
 }
 
-.header-nav{
-  /* background-color: lightcoral; */
-  width: 980px;
-  height: 40px;
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 980px;
+  height: 100%;
   padding: 5px 0;
 }
 
-#menu-booking{
+#menu-ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-menu-li {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+  line-height: 40px;
+}
+
+#menu-booking {
   color: #fb4357;
 }
 
-.nav-menu-li{
-  width: 84px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #222;
-  line-height: 40px
-}
-
-#menu-ul{
+.nav-search {
   display: flex;
+  align-items: center;
 }
 
-.header-nav{
+.search-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-search{
-  padding-top: 5px;
-  line-height: 50px;
-}
-
-.search-container{
-  display: flex;
-}
-
-button, input{
+button, input {
   border: none;
   padding: 0;
 }
 
-.search-bar{
+.search-bar {
   display: block;
   width: 182px;
   height: 25px;
   border-left: 1px solid lightgray;
   padding-left: 13px;
   font-size: 15px;
-  font-weight: bold;
 }
 
-.searchimg{
+.searchimg {
   display: block;
   width: 26px;
   height: 25px;
   padding-right: 13px;
   border-right: 1px solid lightgray;
+  cursor: pointer;
 }
 
-.section-avi{
+.section-avi {
   height: 498px;
   border-top: 2px solid lightcoral;
   background-color: black;
 }
 
-.div-blank{
+.div-blank {
   height: 240px;
   background-color: lightgray;
 }
+
+/* .policy-list {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  padding: 23px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+} */
 
 .policy-list{
   width: 980px;

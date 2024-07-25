@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>깊이 빠져 보다, CGV</title>
   <link rel="stylesheet" href="./CGV.css">
-  <link rel="stylesheet" href="./reset.css">
+  <!-- <link rel="stylesheet" href="./reset.css"> -->
 </head>
 <body>
   <header>
@@ -14,7 +14,9 @@
         <a href="http://www.cgv.co.kr/movies/detail-view/?midx=88287" target="_blank">
           <img src="./img/topbanner.jpg" alt="광고배너">
         </a>
+        <div class="close">
           <img id="exitcontainer--exitad" src="./img/btn_ad_close.png" alt="닫기">
+        </div>
       </div>
     </div>
     <div class="headerContents">
@@ -27,51 +29,160 @@
             <div class="slogan">
               DEEP DIVE SPACE
             </div>
+      </h1>
           </div>
-          <ul class="mymenu">
-            <li class="mymenu--list">
-              <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=31426&menu=006">
-                <img id="hyundaecard" src="./img/hyundaecard.png" alt="현대카드">
-              </a>
+          <div>
+            <ul class="mymenu">
+              <li class="mymenu--list" id="list--hyundae">
+                <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=31426&menu=006">
+                  <img id="hyundaecard" src="./img/hyundaecard.png" alt="현대카드">
+                </a>
+              </li>
+              <li class="mymenu--list" id="list--login">
+                <a href="https://www.cgv.co.kr/user/login/?returnURL=https%3a%2f%2fwww.cgv.co.kr%2fdefault.aspx">
+                  <div class="mymenu-container">
+                    <img class="mymenu--img" src="./img/login.png" alt="로그인">
+                    <div class="mymenu--text">로그인</div>
+                  </div>
+                </a>
+              </li>
+              <li class="mymenu--list" id="list--join">
+                <a href="http://www.cgv.co.kr/user/join/">
+                  <div class="mymenu-container">
+                    <img class="mymenu--img" src="./img/memberJoin.png" alt="회원가입">
+                    <div class="mymenu--text">회원가입</div>
+                  </div>
+                </a>
+              </li>
+              <li class="mymenu--list" id="list--mycgv">
+                <a href="https://www.cgv.co.kr/user/login/?returnURL=%2fuser%2fmycgv%2fdefault.aspx">
+                  <div class="mymenu-container">
+                    <img class="mymenu--img" src="./img/myCGV.png" alt="MY CGV">
+                    <div class="mymenu--text">MY CGV</div>
+                  </div>
+                </a>
+              </li>
+              <li class="mymenu--list" id="list--help">
+                <a href="http://www.cgv.co.kr/support/default.aspx">
+                  <div class="mymenu-container">
+                    <img class="mymenu--img" src="./img/callCenter.png" alt="고객센터">
+                    <div class="mymenu--text">고객센터</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="nav-container">
+      <div class="header-nav">
+        <div class="nav-menu">
+          <ul id="menu-ul">
+            <li class="nav-menu-li">
+              영화
             </li>
-            <li class="mymenu--list">
-              <a href="https://www.cgv.co.kr/user/login/?returnURL=https%3a%2f%2fwww.cgv.co.kr%2fdefault.aspx">
-                <img class="mymenu--img" src="./img/login.png" alt="로그인">
-                <div class="mymenu--text">로그인</div>
-              </a>
+            <li class="nav-menu-li">
+              극장
             </li>
-            <li class="mymenu--list">
-              <a href="http://www.cgv.co.kr/user/join/">
-                <img class="mymenu--img" src="./img/memberJoin.png" alt="회원가입">
-                <div class="mymenu--text">회원가입</div>
-              </a>
+            <li class="nav-menu-li" id="menu-booking">
+              예매
             </li>
-            <li class="mymenu--list">
-              <a href="https://www.cgv.co.kr/user/login/?returnURL=%2fuser%2fmycgv%2fdefault.aspx">
-                <img class="mymenu--img" src="./img/myCGV.png" alt="MY CGV">
-                <div class="mymenu--text">MY CGV</div>
-              </a>
+            <li class="nav-menu-li">
+              스토어
             </li>
-            <li class="mymenu--list">
-              <a href="http://www.cgv.co.kr/support/default.aspx">
-                <img class="mymenu--img" src="./img/callCenter.png" alt="고객센터">
-                <div class="mymenu--text">고객센터</div>
-              </a>
+            <li class="nav-menu-li">
+              이벤트
+            </li>
+            <li class="nav-menu-li">
+              혜택
             </li>
           </ul>
         </div>
-      </h1>
+        <div class="nav-search">
+          <form action="">
+            <div class="search-container">
+              <input class="search-bar" type="text" placeholder="봇치 더 록! 전편" name="" id="">
+              <button type="submit"><img class="searchimg" src="./img/search.png" alt="검색"></button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-    <section id="section1"></section>
-    <section id="section2"></section>
-    <section id="section3"></section>
-    <section id="section4"></section>
-    <section id="section5"></section>
-  </main>
-  <footer>
+    <section id="section1">
+      <div class="section-avi">
 
+      </div>
+    </section>
+    <section id="section2">
+
+    </section>
+    <section id="section3">
+
+    </section>
+    <section id="section4">
+
+    </section>
+    <section id="section5">
+
+    </section>
+    <section id="section6">
+
+    </section>
+  </main>
+  <div class="div-blank"></div>
+  <footer>
+    <ul class="policy-list">
+      <li>
+        <a href="http://corp.cgv.co.kr/" target="_blank">회사소개</a>
+      </li>
+      <li>
+        <a href="http://corp.cgv.co.kr/company/sustainabilityStrategy/strategy.aspx" target="_blank">지속가능경영</a>
+      </li>
+      <li>
+        <a href="http://corp.cgv.co.kr/company/ir/financial/financial_list.aspx" target="_blank">IR</a>
+      </li>
+      <li>
+        <a href="http://corp.cgv.co.kr/company/recruit/step/default.aspx" target="_blank">채용정보</a>
+      </li>
+      <li>
+        <a href="http://corp.cgv.co.kr/company/advertize/ad_Default.aspx">광고/제휴/출점문의</a>
+      </li>
+      <li>
+        <a href="https://www.cgv.co.kr/rules/service.aspx" target="_blank">이용약관</a>
+      </li>
+      <li>
+        <a href="https://www.cgv.co.kr/rules/organized.aspx" target="_blank">편성기준</a>
+      </li>
+      <li>
+        <a href="https://www.cgv.co.kr/rules/privacy.aspx" target="_blank"><strong>개인정보처리방침</strong></a>
+      </li>
+      <li>
+        <a href="https://www.cgv.co.kr/rules/disclaimer.aspx" target="_blank">법적고지</a>
+      </li>
+      <li>
+        <a href="https://www.cgv.co.kr/rules/emreject.aspx" target="_blank">이메일주소무단수집거부</a>
+      </li>
+      <li>
+        <a href="http://corp.cgv.co.kr/company/ethicalManagement/ceoMessage.aspx" target="_blank">윤리경영</a>
+      </li>
+      <li>
+        <a href="https://www.cgv.co.kr/company/cyberAudit.aspx" target="_blank">사이버감사실</a>
+      </li>
+    </ul>
+    <div class="company">
+      <div class="company-info">
+        <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
+        <p>대표이사 : 허민회 사업자등록번호 : 104-81-45690 통신판매업신고번호 : 2017-서울용산-0662 <a id="ftc" href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1048145690" target="_blank">사업자정보확인</a></p>
+        <p>호스팅사업자 : CJ올리브네트웍스 개인정보보호 책임자 : 도형구</p>
+        <p>대표이메일 : cjcgvmaster@cj.net</p>
+        <p>© CJ CGV. All Rights Reserved</p>
+      </div>
+      <div class="company-search">
+        <label for=""></label>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
