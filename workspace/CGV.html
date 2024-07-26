@@ -9,35 +9,57 @@
 </head>
 <body>
   <header>
+    <!-- 배너 시작 -->
     <div class="banner">
-      <div class="banner--ad">
+
+      <!-- 배너 이미지 div -->
+      <div class="banner-img">
         <a href="http://www.cgv.co.kr/movies/detail-view/?midx=88287" target="_blank">
-          <img src="./img/topbanner.jpg" alt="광고배너">
+        <img src="./img/topbanner.jpg" alt="광고배너">
         </a>
-        <div class="close">
-          <img id="exitcontainer--exitad" src="./img/btn_ad_close.png" alt="닫기">
-        </div>
       </div>
-    </div>
+      
+      <!-- x 이미지 div -->
+        <div class="close-img">
+        <img src="./img/btn_ad_close.png" alt="닫기">
+      </div>
+
+    </div> <!-- 배너 끝 -->
+
+    <!-- 로고~네비전 까지 -->
     <div class="headerContents">
-      <h1>
+      
+        <!-- 로고/슬로건 및 로그인/마이메뉴-->
         <div class="headerContents--top">
+        
+          <!-- 로고/슬로건 -->
           <div class="logoslogan">
-            <a href="https://www.cgv.co.kr/">
-              <img class="logo" src="./img/cgvlogo.png" alt="로고">
-            </a>
+
+            <!-- 로고 -->
+            <div class="logo">
+              <a href="http://127.0.0.1:5500/clonecoding/workspace/CGV.html">
+                <img src="./img/cgvlogo.png" alt="로고">
+              </a>
+            </div> <!-- 로고 끝-->
+
+            <!-- 슬로건 -->
             <div class="slogan">
               DEEP DIVE SPACE
             </div>
-      </h1>
-          </div>
-          <div>
+
+          </div> <!-- 로고/슬로건 끝 -->
+
+          <!-- 로그인/마이메뉴 ul-->
+          <div class="loginmymenu">
+
             <ul class="mymenu">
+
               <li class="mymenu--list" id="list--hyundae">
                 <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=31426&menu=006">
                   <img id="hyundaecard" src="./img/hyundaecard.png" alt="현대카드">
                 </a>
               </li>
+
               <li class="mymenu--list" id="list--login">
                 <a href="https://www.cgv.co.kr/user/login/?returnURL=https%3a%2f%2fwww.cgv.co.kr%2fdefault.aspx">
                   <div class="mymenu-container">
@@ -46,6 +68,7 @@
                   </div>
                 </a>
               </li>
+
               <li class="mymenu--list" id="list--join">
                 <a href="http://www.cgv.co.kr/user/join/">
                   <div class="mymenu-container">
@@ -54,6 +77,7 @@
                   </div>
                 </a>
               </li>
+
               <li class="mymenu--list" id="list--mycgv">
                 <a href="https://www.cgv.co.kr/user/login/?returnURL=%2fuser%2fmycgv%2fdefault.aspx">
                   <div class="mymenu-container">
@@ -62,6 +86,7 @@
                   </div>
                 </a>
               </li>
+
               <li class="mymenu--list" id="list--help">
                 <a href="http://www.cgv.co.kr/support/default.aspx">
                   <div class="mymenu-container">
@@ -70,45 +95,72 @@
                   </div>
                 </a>
               </li>
+
             </ul>
-          </div>
-        </div>
-    </div>
+
+          </div> <!-- 로그인/마이메뉴 ul끝 ()-->
+
+        </div> <!-- 로고/슬로건 및 로그인/마이메뉴 끝-->
+
+      </div> <!-- 로고 ~ 네비전 까지 끝-->
+    
+    <!-- 네비 바/검색 창 시작-->
     <div class="nav-container">
+
+      <!-- 네비 바 시작 -->
       <div class="header-nav">
+
+        <!-- 네비 바 ul -->
         <div class="nav-menu">
+
           <ul id="menu-ul">
+
             <li class="nav-menu-li">
               영화
             </li>
+
             <li class="nav-menu-li">
               극장
             </li>
+
             <li class="nav-menu-li" id="menu-booking">
               예매
             </li>
+
             <li class="nav-menu-li">
               스토어
             </li>
+
             <li class="nav-menu-li">
               이벤트
             </li>
+
             <li class="nav-menu-li">
               혜택
             </li>
-          </ul>
-        </div>
+
+          </ul> <!-- 네비 바 ul 끝-->
+
+        </div> <!-- 네비 바 끝-->
+
+        <!-- 검색 창-->
         <div class="nav-search">
+
+          <!-- 검색 폼 -->
           <form action="">
             <div class="search-container">
               <input class="search-bar" type="text" placeholder="봇치 더 록! 전편" name="" id="">
               <button type="submit"><img class="searchimg" src="./img/search.png" alt="검색"></button>
             </div>
-          </form>
-        </div>
-      </div>
-    </div>
+          </form> 
+
+        </div> <!-- 검색 창 끝-->
+
+      </div> <!-- 네비 바/검색 창 끝-->
+
   </header>
+
+  <!-- 메인 -->
   <main>
     <section id="section1">
       <div class="section-avi">
@@ -127,12 +179,74 @@
     <section id="section5">
 
     </section>
+
     <section id="section6">
 
+      <div class="noticecontents"> <!-- 공지사항/QR/이용권 부모 틀 시작 -->
+
+        <div class="noticeandQR"> <!-- 공지사항/QR 부모 틀 시작 -->
+
+          <div class="notice"> <!-- 공지사항 시작 -->
+
+            <div class="notice-contents">
+              <div class="contents-notice">
+                <strong>공지사항</strong>
+              </div>
+              <div class="contents-etc">
+                <a href="http://www.cgv.co.kr/support/news/detail-view.aspx?idx=8033&page=1&type=&searchtext=&searchfield=0&pb=Y">[기타][CGV] 해피머니상품권 사용중지 안내</a>
+              </div>
+              <div class="contents-more">
+                <a href="http://www.cgv.co.kr/support/news/default.aspx">더보기</a>
+              </div>
+            </div>
+
+            <div class="client-contents">
+              <strong class="client-callcenter">고객센터</strong>
+              <div class="client-list">
+                <strong class="call-number">1544-1122</strong>
+                <div>고객센터 운영시간 (평일 09:00~18:00)</div>
+                <div>업무시간 외 자동응답 안내 가능합니다.</div>
+              </div>
+            </div>
+
+            <div class="inquiry">
+              <a href="http://www.cgv.co.kr/support/faq/default.aspx">FAQ</a>
+              <a class="inquiry-qna" href="https://www.cgv.co.kr/user/login/?returnURL=%2fsupport%2fqna%2fdefault.aspx">1:1 문의</a>
+              <a class="inquiry-qna" href="http://www.cgv.co.kr/support/lease/default.aspx">대관/단체 문의</a>
+            </div>
+
+          </div> <!-- 공지사항 끝 -->
+
+          <div class="QR"> <!-- 앱 다운로드 QR 시작 -->
+            <div class="text-download">앱 다운로드</div>
+            <div class="text-app">CGV앱에서 더 편리하게 이용하세요</div>
+            <img src="./img/img_qrcode.gif" alt="QR코드" id="img-QR">
+            <div class="text-msg1">QR코드를 스캔하고</div>
+            <div class="text-msg2">앱설치 페이지로 바로 이동하세요</div>
+          </div> <!-- 앱 다운로드 QR 끝 -->
+
+        </div> <!-- 공지사항/QR 부모 틀 끝 -->
+
+        <div class="bugs"> <!-- 이용권 시작 -->
+          <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=35551&menu=006" target="_blank">
+            <img src="./img/CGV_BUGS_226x259.png" alt="이용권">
+          </a>
+        </div>
+
+      </div> <!-- 공지사항/QR/이용권 부모 틀 끝 -->
+
     </section>
+
   </main>
+
+  <!-- 가상 몸뚱아리 -->
   <div class="div-blank"></div>
+
+  <!-- 푸터 -->
   <footer>
+
+    <!-- policy -->
+    <div class="policy">
     <ul class="policy-list">
       <li>
         <a href="http://corp.cgv.co.kr/" target="_blank">회사소개</a>
@@ -171,6 +285,12 @@
         <a href="https://www.cgv.co.kr/company/cyberAudit.aspx" target="_blank">사이버감사실</a>
       </li>
     </ul>
+    </div> <!-- policy 끝-->
+
+    <!-- 회사정보 및 계열사 바로가기-->
+     <div class="com-sub">
+
+    <!-- 회사정보 -->
     <div class="company">
       <div class="company-info">
         <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
@@ -182,7 +302,43 @@
       <div class="company-search">
         <label for=""></label>
       </div>
-    </div>
+    </div> <!-- 회사정보 끝-->
+
+    <!-- 계열사 바로가기 select-->
+    <div class="sub">
+      <form action="">
+        <select name="sub" id="sub-select">
+          <option value="">계열사 바로가기</option>
+          <optgroup label="CJ그룹">
+            <option value="">CJ주식회사</option>
+          </optgroup>
+          <optgroup label="식품 & 식품서비스">
+            <option value="">CJ제일제당</option>
+            <option value="">CJ푸드빌</option>
+            <option value="">CJ프레시웨이</option>
+          </optgroup>
+          <optgroup label="생명공학">
+            <option value="">CJ제일제당 BIO사업부문</option>
+            <option value="">CJ Feed&Card</option>
+          </optgroup>
+          <optgroup label="물류 & 신유통">
+            <option value="">CJ대한통운</option>
+            <option value="">CJ대한통운 건설부문</option>
+            <option value="">CJ올리브영</option>
+            <option value="">CJ올리브네트웍스</option>
+            <option value="">CJ ENM 커머스부분</option>
+          </optgroup>
+          <optgroup label="엔터테인먼트 & 미디어">
+            <option value="">CJ ENM 엔터테인먼트부문</option>
+            <option value="">CJ CGV</option>
+          </optgroup>
+        </select>
+        <input id="GO" type="submit" value="GO">
+      </form>
+    </div> <!-- 계열사 바로가기 select 끝-->
+
+    </div> <!-- 회사정보 및 계열사 바로가기 끝-->
+
   </footer>
 </body>
 </html>
