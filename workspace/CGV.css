@@ -18,38 +18,31 @@ img{
   display: block;
 }
 
-header{
-  position: relative;
-}
-
 /* main{
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   height: 1000px;
 } */
 
-.banner{
+.banner-background{
   width: 100%;
+  height: 80px;
   background-color: black;
+}
+.banner{
+  width: 980px;
+  height: 80px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.banner-img{
+.close{
   position: absolute;
-}
-
-.close-img{
-  width: 980px;
-  height: 80px;
-  position: relative;
-  /* z-index: 1; */
-}
-
-.close-img > img{
-  position: relative;
-  float: right;
+  z-index: 1;
   top: 11px;
   right: 10px;
 }
@@ -248,6 +241,7 @@ button, input{
   height: 25px;
   padding-right: 13px;
   border-right: 1px solid lightgray;
+  cursor: pointer;
 }
 
 .section-avi{
@@ -298,11 +292,153 @@ button, input{
   color: rgb(173, 173, 173);
   border-left: 1px solid;
   padding-left: 8px;
+  cursor: pointer;
 }
+
+
 .chart-list{
   width: 980px;
   height: 295px;
-  background-color: powderblue;
+  position: relative;
+  /* background-color: powderblue; */
+  display: flex;
+  overflow: hidden;
+}
+.chart-container{
+  width: 170px;
+  height: 295px;
+  margin-right: 32.5px;
+  /* background-color: #666; */
+  position: relative;
+}
+.chart-img, .movie{
+  width: 170px;
+  height: 234px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  /* background-color: #fb4357; */
+}
+.chart-img::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+  pointer-events: none;
+}
+.age, .d-day{
+  width: 20px;
+  height: 20px;
+  border-radius: 2.5px;
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 6px;
+}
+.age{
+  letter-spacing: -1.2px;
+  top: 6px;
+  color: white;
+}
+.d-day{
+  background-color: white;
+  color: red;
+  top: 30px;
+  letter-spacing: -1.1px;
+  font-size: 10px;
+}
+.age19{
+  background-color: rgb(219, 17, 17);
+}
+.age12{
+  background-color: rgb(209, 181, 19);
+}
+.ageAll{
+  background-color: yellowgreen;
+}
+.age15{
+  background-color: darkorange;
+}
+.number{
+  color: white;
+  position: absolute;
+  height: 54px;
+  left: 6px;
+  bottom: 0;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  z-index: 2;
+}
+.premium{
+  width: 36px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  z-index: 2;
+}
+.premium > img{
+  border: 1px solid white;
+  border-radius: 2px;
+  width: 35px;
+  height: 7px;
+  margin-top: 2px;
+}
+
+.text-container{
+  width: 170px;
+  height: 61px;
+}
+.chart-title{
+  width: 170px;
+  height: 21px;
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1.4px;
+}
+.text-container, .chart-title{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chart-text{
+  width: 146px;
+  height: 26px;
+  display: flex;
+}
+.egg{
+  width: 47.5px;
+  height: 17px;
+  margin-top: 9px;
+  display: flex;
+}
+.small-img{
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+}
+.reservation{
+  width: 82.5px;
+  height: 17px;
+  margin-top: 9px;
+  padding-left: 16px;
+}
+.percent, .reservation{
+  color: #666;
+  font-size: 14px;
+  letter-spacing: -0.5px;
 }
 
 .event-background{
