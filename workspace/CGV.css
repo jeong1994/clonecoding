@@ -18,33 +18,32 @@ img{
   display: block;
 }
 
+body{
+  position: relative;
+}
 /* main{
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   height: 1000px;
 } */
 
-.banner-background{
+.banner{
   width: 100%;
   height: 80px;
   background-color: black;
-}
-.banner{
-  width: 980px;
-  height: 80px;
   margin: 0 auto;
   position: relative;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
 
 .close{
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 11px;
-  right: 10px;
+  right: 455px;
 }
 
 .headerContents{
@@ -287,6 +286,7 @@ button, input{
 }
 .top-text-container > :nth-child(1){
   padding-right: 8px;
+  cursor: pointer;
 }
 .top-text-container > :nth-child(2){
   color: rgb(173, 173, 173);
@@ -317,7 +317,6 @@ button, input{
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  /* background-color: #fb4357; */
 }
 .chart-img::before{
   content: "";
@@ -981,4 +980,47 @@ footer{
   cursor: pointer;
 }
 
+.button{
+  display: flex;
+}
+
+
+.booking-button{
+  width: 136px;
+  height: 24px;
+  padding: 12px 0 14px 0;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff038e, #da800b);
+}
+.button-frame{
+  width: 195px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  position: sticky;
+  bottom: 130px;
+  right: 400px;
+}
+.arrow-top{
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.gotoTop-img{
+  width: 15px;
+  height: 21px;
+}
+
+.arrow-top, .booking-button{
+  box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
