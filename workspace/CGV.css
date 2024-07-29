@@ -40,10 +40,12 @@ body{
 }
 
 .close{
-  position: absolute;
-  z-index: 2;
+  transform: translate(470px, -70px);
+  /* border: 1px solid white; */
+  /* position: absolute;
+  z-index: 1;
   top: 11px;
-  right: 455px;
+  right: 455px; */
 }
 
 .headerContents{
@@ -243,7 +245,8 @@ button, input{
   cursor: pointer;
 }
 
-.section-avi{
+.video-background{
+  width: 100%;
   height: 498px;
   border-top: 2px solid lightcoral;
   background-color: black;
@@ -252,9 +255,68 @@ button, input{
   flex-direction: column;
   align-items: center;
 }
-
-#ddddd, #eeeee{ /* 임시 */
-  height: 100%;
+.video-frame{
+  width: 980px;
+  height: 498px;
+  position: relative;
+}
+#ddddd{ /* 임시 */
+  transform: translate(320px, 0);
+  height: 500px;
+}
+.video-title{
+  font-size: 40px;
+  top: 170px;
+}
+.video-text{
+  font-size: 20px;
+  top: 240px;
+}
+.video-text,.video-title{
+  font-weight: bold;
+  z-index: 1;
+  color: white;
+  position: absolute;
+}
+.detail-frame{
+  width: 179.5px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 315px;
+}
+.detail-view{
+  width: 99.5px;
+  height: 30px;
+  display: flex;
+  background-color: aliceblue;
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  }
+.arrow-r{
+  width: 10px;
+  height: 15px;
+  margin: 0.8px 0 0 10px;
+}
+.stop-play, .sound{
+  width: 28px;
+  height: 28px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.stop-play-img, .sound-img{
+  width: 20px;
+  height: 20px;
 }
 
 #section2{
@@ -1024,3 +1086,4 @@ footer{
   align-items: center;
 }
 
+/* .home:hover .grift{} */
