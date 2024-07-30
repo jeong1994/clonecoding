@@ -175,6 +175,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid lightcoral;
 }
 
 .header-nav{
@@ -204,12 +205,6 @@ body{
 .header-nav{
   display: flex;
   justify-content: space-between;
-}
-
-.nav-center_block{
-  width: 656px;
-  height: 40px;
-  background-color: white;
 }
 
 .nav-search{
@@ -244,11 +239,59 @@ button, input{
   border-right: 1px solid lightgray;
   cursor: pointer;
 }
+.block{
+  width: 240px;
+  height: 40px;
+  background-color: white;
+}
 
+.dropdown-background{
+  width: 100%;
+  height: 340px;
+  position: absolute;
+  display: flex;
+  z-index: 3;
+  bottom: -342px;
+  justify-content: center;
+  background-color: white;
+  display: none;
+}
+.nav-container:hover .dropdown-background {
+  display: flex;
+}
+.dropdown-frame{
+  width: 970px;
+  height: 448px;
+  /* background-color: lightgray; */
+  position: relative;
+  display: flex;
+}
+.drop-list > a:hover, .list-text > a:hover{
+  text-decoration: underline;
+}
+.drop-list{
+  font-size: 14px;
+  font-weight: bold;
+  width: 162px;
+  height: 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+#noborder{
+  border-right: 0;
+}
+.list-text{
+  /* display: none; */
+  font-weight: lighter;
+  color: #666;
+  width: 167px;
+  height: 70px;
+  margin-top: 10px;
+}
 .video-background{
   width: 100%;
   height: 498px;
-  border-top: 2px solid lightcoral;
   background-color: black;
   position: relative;
   display: flex;
@@ -313,6 +356,7 @@ button, input{
   align-items: center;
   border: 1px solid white;
   border-radius: 15px;
+  cursor: pointer;
 }
 .stop-play-img, .sound-img{
   width: 20px;
@@ -356,8 +400,6 @@ button, input{
   padding-left: 8px;
   cursor: pointer;
 }
-
-
 .chart-list{
   width: 980px;
   height: 295px;
@@ -373,12 +415,59 @@ button, input{
   /* background-color: #666; */
   position: relative;
 }
-.chart-img, .movie{
+.chart-img, .movie, .poster-hoverbox{
   width: 170px;
   height: 234px;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.poster-hoverbox{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.473);
+  z-index: 2;
+  top: 0;
+  /* display: flex; */
+  align-items: center;
+  display: none;
+}
+
+.chart-img:hover .poster-hoverbox{
+  display: flex;
+}
+
+.text-container{
+  width: 120px;
+  height: 70px;
+  display: flex;
+}
+.poster-top-text, .poster-bottom-text{
+  width: 120px;
+  height: 34px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.poster-top-text{
+  background-color: white;
+  color: gray;
+}
+.poster-bottom-text{
+  background-color: #fb4357;
+  color: white;
+  margin-top: 5px;
+}
+.poster-top-text:hover{
+  background-color: rgba(255, 255, 255, 0.795);
+  color: gray;
+}
+.poster-bottom-text:hover{
+  background-color: #fb4358c9;
+  color: white;
+  margin-top: 5px;
 }
 .chart-img::before{
   content: "";
@@ -1087,3 +1176,4 @@ footer{
 }
 
 /* .home:hover .grift{} */
+/* home 클래스에 호버를 했을때 grift클래스의 속성을 ~하겠다 */

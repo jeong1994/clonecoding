@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>깊이 빠져 보다, CGV</title>
   <link rel="stylesheet" href="./CGV.css">
+  <!-- <script src="./CGV.js"></script> -->
 </head>
 
 <body>
@@ -112,37 +113,35 @@
           <ul id="menu-ul">
 
             <li class="nav-menu-li">
-              <a href="http://www.cgv.co.kr/movies/?lt=1&ft=0">영화</a>
+              <a href="http://www.cgv.co.kr/movies/?lt=1&ft=0" class="hover-menu">영화</a>
             </li>
 
             <li class="nav-menu-li">
-              <a href="http://www.cgv.co.kr/theaters/">극장</a>
+              <a href="http://www.cgv.co.kr/theaters/" class="hover-menu">극장</a>
             </li>
 
             <li class="nav-menu-li">
-              <a href="http://www.cgv.co.kr/ticket/" id="menu-booking">예매</a>
+              <a href="http://www.cgv.co.kr/ticket/" id="menu-booking" class="hover-menu">예매</a>
             </li>
 
             <li class="nav-menu-li">
-              <a href="https://www.cgv.co.kr/culture-event/popcorn-store/default.aspx">스토어</a>
+              <a href="https://www.cgv.co.kr/culture-event/popcorn-store/default.aspx" class="hover-menu">스토어</a>
             </li>
 
             <li class="nav-menu-li">
-              <a href="http://www.cgv.co.kr/culture-event/event/defaultNew.aspx#1">이벤트</a>
+              <a href="http://www.cgv.co.kr/culture-event/event/defaultNew.aspx#1" class="hover-menu">이벤트</a>
             </li>
 
             <li class="nav-menu-li">
-              <a href="http://www.cgv.co.kr/discount/discountlist.aspx#1">혜택</a>
+              <a href="http://www.cgv.co.kr/discount/discountlist.aspx#1" class="hover-menu">혜택</a>
             </li>
 
           </ul> <!-- 네비 바 ul 끝-->
 
         </div> <!-- 네비 바 끝-->
-
-        <div class="nav-center_block"></div> <!-- 레이아웃 임시해결용 블럭-->
-
-        <ul></ul>
-
+        
+        <div class="block"></div> <!-- 레이아웃용 임시 블록-->
+        
         <!-- 검색 창-->
         <div class="nav-search">
 
@@ -157,6 +156,61 @@
         </div> <!-- 검색 창 끝-->
 
       </div> <!-- 네비 바/검색 창 끝-->
+
+      <div class="dropdown-background"> <!-- 드롭다운 배경 -->
+
+        <ul class="dropdown-frame"> <!-- 드롭다운 프레임 -->
+    
+          <ul class="drop-list">
+            <a href="#영화">영화</a>
+            <li class="list-text"><a href="#무비차트">무비차트</a></li>
+            <li class="list-text"><a href="#아트하우스">아트하우스</a></li>
+            <li class="list-text"><a href="#ICECON">ICECON</a></li>
+        </ul>
+        <ul class="drop-list">
+            <a href="#극장">극장</a>
+            <li class="list-text"><a href="#CGV극장">CGV 극장</a></li>
+            <li class="list-text"><a href="#특별관">특별관</a></li>
+        </ul>
+        <ul class="drop-list">
+            <a href="#예매">예매</a>
+            <li class="list-text"><a href="#빠른예매">빠른예매</a></li>
+            <li class="list-text"><a href="#상영스케줄">상영스케줄</a></li>
+            <li class="list-text"><a href="#EnglishTicketing">English Ticketing</a></li>
+            <li class="list-text"><a href="#EnglishSchedule">English Schedule</a></li>
+        </ul>
+        <ul class="drop-list">
+            <a href="#스토어">스토어</a>
+            <li class="list-text"><a href="#패키지">패키지</a></li>
+            <li class="list-text"><a href="#영화관람권">영화관람권</a></li>
+            <li class="list-text"><a href="#기프트카드">기프트카드</a></li>
+            <li class="list-text"><a href="#콤보">콤보</a></li>
+            <li class="list-text"><a href="#팝콘">팝콘</a></li>
+            <li class="list-text"><a href="#음료">음료</a></li>
+            <li class="list-text"><a href="#스낵">스낵</a></li>
+            <li class="list-text"><a href="#플래이존">플래이존</a></li>
+            <li class="list-text"><a href="#씨네샵">씨네샵 ></a></li>
+        </ul>
+        <ul class="drop-list">
+            <a href="#이벤트">이벤트</a>
+            <li class="list-text"><a href="#SPECIAL">SPECIAL</a></li>
+            <li class="list-text"><a href="#영화예매">영화/예매</a></li>
+            <li class="list-text"><a href="#멤버십CLUB">멤버십/CLUB</a></li>
+            <li class="list-text"><a href="#CGV극장별">CGV 극장별</a></li>
+            <li class="list-text"><a href="#제휴할인">제휴할인</a></li>
+            <li class="list-text"><a href="#당첨자발표">당첨자 발표</a></li>
+            <li class="list-text"><a href="#종료된이벤트">종료된 이벤트</a></li>
+        </ul>
+        <ul class="drop-list" id="noborder">
+            <a href="#혜택">혜택</a>
+            <li class="list-text"><a href="#CGV">CGV</a></li>
+            <li class="list-text"><a href="#CLUB">CLUB</a></li>
+            <li class="list-text"><a href="#VIP라운지">VIP 라운지</a></li>
+        </ul>
+    
+        </ul> <!-- 드롭다운 프레임 끝 -->
+    
+      </div> <!-- 드롭다운 배경 끝 -->
 
   </header>
 
@@ -236,6 +290,12 @@
                 <img src="./img/poster/premiumlogo/forDX_white.png">
                 <img src="./img/poster/premiumlogo/screenx_white.png">
               </div>
+              <div class="poster-hoverbox">
+                <div class="text-container">
+                  <a href="#상세보기"><div class="poster-top-text">상세보기</div></a>
+                  <a href="#예매하기"><div class="poster-bottom-text">예매하기</div></a>
+                </div>
+              </div>
             </div>
 
             <div class="text-container"> <!-- 제목,예매율 틀 -->
@@ -261,6 +321,12 @@
               <div class="age age12">12</div>
               <div class="d-day">D-4</div>
               <div class="number">2</div>
+              <div class="poster-hoverbox">
+                <div class="text-container">
+                  <a href="#상세보기"><div class="poster-top-text">상세보기</div></a>
+                  <a href="#예매하기"><div class="poster-bottom-text">예매하기</div></a>
+                </div>
+              </div>
             </div>
 
             <div class="text-container"> <!-- 제목,예매율 틀 -->
@@ -288,6 +354,12 @@
               <div class="premium">
                 <img src="./img/poster/premiumlogo/forDX_white.png">
                 <img src="./img/poster/premiumlogo/screenx_white.png">
+              </div>
+              <div class="poster-hoverbox">
+                <div class="text-container">
+                  <a href="#상세보기"><div class="poster-top-text">상세보기</div></a>
+                  <a href="#예매하기"><div class="poster-bottom-text">예매하기</div></a>
+                </div>
               </div>
             </div>
 
@@ -318,6 +390,12 @@
                 <img src="./img/poster/premiumlogo/forDX_white.png">
                 <img src="./img/poster/premiumlogo/screenx_white.png">
               </div>
+              <div class="poster-hoverbox">
+                <div class="text-container">
+                  <a href="#상세보기"><div class="poster-top-text">상세보기</div></a>
+                  <a href="#예매하기"><div class="poster-bottom-text">예매하기</div></a>
+                </div>
+              </div>
             </div>
 
             <div class="text-container"> <!-- 제목,예매율 틀 -->
@@ -343,6 +421,12 @@
               <div class="age age15">15</div>
               <div class="d-day">D-11</div>
               <div class="number">5</div>
+              <div class="poster-hoverbox">
+                <div class="text-container">
+                  <a href="#상세보기"><div class="poster-top-text">상세보기</div></a>
+                  <a href="#예매하기"><div class="poster-bottom-text">예매하기</div></a>
+                </div>
+              </div>
             </div>
 
             <div class="text-container"> <!-- 제목,예매율 틀 -->
