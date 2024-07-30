@@ -1154,6 +1154,7 @@ footer{
   position: sticky;
   bottom: 130px;
   right: 400px;
+  z-index: 2;
 }
 .arrow-top{
   background-color: #fff;
