@@ -304,7 +304,7 @@ button, input{
   position: relative;
 }
 #ddddd{ /* 임시 */
-  transform: translate(320px, 0);
+  transform: translate(50px, 0);
   height: 500px;
 }
 .video-title{
